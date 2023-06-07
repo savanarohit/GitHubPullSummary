@@ -59,6 +59,7 @@ Subject = "GitHub Pull Request Summary"
 
 # Email Summary body
 body = f"""
+
 Dear Manager,
 
 Here is the summary of pull requests in the last week for the facebook/react repository:
@@ -76,4 +77,4 @@ Your Name
 print("From", From, "\n")
 print("To", To, "\n")
 print("Subject", Subject, "\n")
-print("Body", body, "\n")
+print(body, "\n")

@@ -1,16 +1,53 @@
-# GitHub Pull Requests Summary
-Code to get a summary Pull requests using GitHub API
+# GitHub Pull Request Summary
 
-# Task
-write code that will use the GitHub API to retrieve a summary of all opened, closed, and in progress pull requests in the last week for a given repository and print an email summary report that might be sent to a manager or Scrum-master.
+Author: Savana Rohit
+Date: June 4, 2023
+Description: This Python program retrieves GitHub pull request summaries within a date range.
 
-# Details
-Choose any public target GitHub repository you like that has had at least 3 pull requests in the last week. Format the content email as you see fit, with the goal to allow the reader to easily digest the events of the past week. Please print to console the details of the email you would send (From, To, Subject, Body).
+## Prerequisites
 
-# Definition of Done
-- Your code demonstrates use of variables, looping structures, and control structures
-- Your code prints a user-friendly summary of open, merged, and closed pull requests including counts of PRs as well as their titles. 
-- Use your judgement on what you think is important information.
-- Your code is able to be run/compiled without errors
-- Your code should be configurable when it runs. Use your judgement on what needs to be configurable.
-- Your solution describes how this would be run to produce regular reports.
+- Python 3.x
+- Required Python packages:
+    - `dotenv`
+    - `github`
+    - `tabulate`
+
+## Installation
+
+1. Clone the repository:
+
+git clone https://github.com/your-username/your-repo.git
+
+2. Change into the project directory:
+
+cd your-repo
+
+3. Install the required packages:
+
+pip install -r requirements.txt
+
+4. Set up the environment variables:
+
+Create a .env file in the project directory.
+
+Add the following line to the .env file:
+
+GITHUB_API_KEY=your-github-api-key
+
+Replace your-github-api-key with your personal GitHub API key.
+
+# Usage
+
+1. Run the Python program:
+
+python code.py
+
+2. Follow the prompts and enter the required information:
+
+Your email address (From)
+The recipient's email address (To)
+
+3. Review the generated summary and table of pull requests.
+
+# Example Output
+

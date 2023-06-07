@@ -1,0 +1,5 @@
+datetime
+github
+python-dotenv
+PyGithub
+tabulate

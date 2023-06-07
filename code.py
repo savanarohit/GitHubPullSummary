@@ -59,7 +59,6 @@ Subject = "GitHub Pull Request Summary"
 
 # Email Summary body
 body = f"""
-
 Dear Manager,
 
 Here is the summary of pull requests in the last week for the facebook/react repository:

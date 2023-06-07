@@ -36,7 +36,7 @@ Description: This Python program retrieves GitHub pull request summaries within 
 
     Replace your-github-api-key with your personal GitHub API key.
 
-# Usage
+## Usage
 
 1. Run the Python program:
 
@@ -49,15 +49,13 @@ Description: This Python program retrieves GitHub pull request summaries within 
 
 3. Review the generated summary and table of pull requests.
 
-# Example Output
+## Example Output
 
-From ad
+From Rohit-s@xyz.com
 
-To vc
+To ScrumMaster@xyz.com
 
 Subject GitHub Pull Request Summary
-
-
 
 Dear Manager,
 

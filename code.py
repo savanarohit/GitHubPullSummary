@@ -17,14 +17,14 @@ load_dotenv()
 github_api_key = os.getenv("GITHUB_API_KEY")
 
 # GitHub connection instance
-g = Github(github_api_key, timeout=20)
+g = Github(github_api_key, timeout=10)
 
 # GitHub Repo name
 repo = g.get_repo("facebook/react")
 
 # Time Period of a week
 end_date = datetime.now()
-start_date = end_date - timedelta(days=7)
+start_date = end_date - timedelta(days=1)
 
 # Last Week's Pull requests
 pulls = repo.get_pulls(state="all", sort="created", base="main")
@@ -73,7 +73,7 @@ Best regards,
 Your Name
 """
 
-print("From\n", From)
-print("To\n", To)
-print("Subject\n", Subject)
-print("Body\n", body)
+print("From", From)
+print("To", To)
+print("Subject", Subject)
+print("Body", body)

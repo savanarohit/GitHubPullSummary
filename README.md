@@ -6,10 +6,12 @@ Description: This Python program retrieves GitHub pull request summaries within 
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.9
 - Required Python packages:
-    - `dotenv`
+    - `datetime`
     - `github`
+    - `python-dotenv`
+    - `PyGithub`
     - `tabulate`
 
 ## Installation

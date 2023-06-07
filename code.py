@@ -53,8 +53,8 @@ for pull in pulls_last_week:
 summary = tabulate(counts.items(), headers=["State", "Count"], tablefmt="grid")
 
 # Email details
-From = input("Enter your email address (From):")
-To = input("Enter the recipient's email address (To):")
+From = input("Enter your email address (From):", "\n")
+To = input("Enter the recipient's email address (To):", "\n")
 Subject = "GitHub Pull Request Summary"
 
 # Email Summary body
@@ -73,7 +73,7 @@ Best regards,
 Your Name
 """
 
-print("From", From)
-print("To", To)
-print("Subject", Subject)
-print("Body", body)
+print("From", From, "\n")
+print("To", To, "\n")
+print("Subject", Subject, "\n")
+print("Body", body, "\n")

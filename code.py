@@ -28,8 +28,7 @@ start_date = end_date - timedelta(days=7)
 
 # Last Week's Pull requests
 pulls = repo.get_pulls(state="all", sort="created", base="main")
-pulls_last_week = [pull for pull in pulls if start_date <=
-                   pull.created_at <= end_date]
+pulls_last_week = [pull for pull in pulls if start_date <= pull.created_at <= end_date]
 
 # Pull requests summary format
 pulls_data = []
@@ -37,16 +36,13 @@ for pull in pulls_last_week:
     pulls_data.append([pull.number, pull.title, pull.state])
 
 # Pull request summary table
-table = tabulate(pulls_data, headers=[
-    "Number", "Title", "State"], tablefmt="grid")
+table = tabulate(pulls_data, headers=["Number", "Title", "State"], tablefmt="grid")
 
 # Count of pull requests by state
 counts = {"open": 0, "closed": 0, "merged": 0}
 
 for pull in pulls_last_week:
-    state = (
-        pull.state.lower()
-    )
+    state = pull.state.lower()
     if state in counts:
         counts[state] += 1
         counts["merged"] += 1
@@ -54,8 +50,7 @@ for pull in pulls_last_week:
         counts["closed"] += 1
 
 # Summary table with counts
-summary = tabulate(counts.items(), headers=[
-    "State", "Count"], tablefmt="grid")
+summary = tabulate(counts.items(), headers=["State", "Count"], tablefmt="grid")
 
 # Email details
 From = input("Enter your email address (From): ")
@@ -78,7 +73,7 @@ Best regards,
 Your Name
 """
 
-print("From", From)
-print("To", To)
-print("Subject", Subject)
-print("Body", body)
+print("From\n", From)
+print("To\n", To)
+print("Subject\n", Subject)
+print("Body\n", body)

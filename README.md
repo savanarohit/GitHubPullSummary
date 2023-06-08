@@ -1,8 +1,8 @@
 # GitHub Pull Request Summary
 
-Author: Savana Rohit
-Date: June 4, 2023 
-Description: This Python program retrieves GitHub pull request summaries within a date range.
+Author: Savana Rohit <br>
+Date: June 4, 2023 <br>
+Description: This Python program retrieves GitHub pull request summaries within a date range. <br>
 
 ## Prerequisites
 

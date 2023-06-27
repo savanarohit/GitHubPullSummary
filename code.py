@@ -51,7 +51,7 @@ for pull in pulls_last_week:
         elif state == "merged":
         counts["merged"] += 1
 
-# Old Code
+# Issue with the below code's output
 """
         counts[state] += 1
         counts["merged"] += 1

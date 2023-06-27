@@ -50,15 +50,7 @@ for pull in pulls_last_week:
         counts["closed"] += 1
         elif state == "merged":
         counts["merged"] += 1
-
-# Issue with the below code's output
-"""
-        counts[state] += 1
-        counts["merged"] += 1
-        counts["open"] += 1
-        counts["closed"] += 1
-"""
-
+    
 # Summary table with counts
 summary = tabulate(counts.items(), headers=["State", "Count"], tablefmt="grid")
 

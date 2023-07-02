@@ -1,7 +1,7 @@
 """
 Author: Savana Rohit
 Date: June 4, 2023
-Description: This Python program retrieves GitHub pull request summaries within a date range.
+Description: This Python code retrieves GitHub pull request summaries within a date range.
 """
 
 from datetime import datetime, timedelta
@@ -43,13 +43,14 @@ counts = {"open": 0, "closed": 0, "merged": 0}
 
 for pull in pulls_last_week:
     state = pull.state.lower()
-    if state == "open":
+    if state in counts:
+        if state == "open":
         counts["open"] += 1
-    elif state == "closed":
+        elif state == "closed":
         counts["closed"] += 1
-    elif state == "merged":
+        elif state == "merged":
         counts["merged"] += 1
-
+    
 # Summary table with counts
 summary = tabulate(counts.items(), headers=["State", "Count"], tablefmt="grid")
 

@@ -2,7 +2,7 @@
 
 Author: Savana Rohit <br>
 Date: June 4, 2023 <br>
-Description: This Python program retrieves GitHub pull request summaries within a date range. <br>
+Description: This Python code retrieves GitHub pull request summaries within a date range. <br>
 
 ## Prerequisites
 

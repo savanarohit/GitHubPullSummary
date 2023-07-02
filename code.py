@@ -1,7 +1,7 @@
 """
 Author: Savana Rohit
 Date: June 4, 2023
-Description: This Python program retrieves GitHub pull request summaries within a date range.
+Description: This Python code retrieves GitHub pull request summaries within a date range.
 """
 
 from datetime import datetime, timedelta

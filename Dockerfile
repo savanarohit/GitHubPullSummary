@@ -1,18 +1,13 @@
-# official Python base image
-FROM python:3.9
-
-# Set the working dir 
-WORKDIR /app
-
-# Copy code.py and requirements.txt files to the docker container
-COPY . .
-
-# Install python dependencies
+# Build Stage
+FROM python:3.9.7 AS builder
+WORKDIR /build
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy code into the docker container
-COPY . .
-
-# Run the Code.py file
-CMD [ "python","code.py" ]
-
+# Final Stage
+FROM Python:3.9.7
+WORKDIR /app
+COPY --from=builder /build /app
+COPY code.py .
+USER nobody:nogroup
+ENTRYPOINT ["python","code.py"]

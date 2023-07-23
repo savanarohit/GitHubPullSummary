@@ -1,10 +1,10 @@
-# GitHub Pull Request Summary
+## GitHub Pull Request Summary
 
 Author: Savana Rohit <br>
 Date: June 4, 2023 <br>
 Description: This Python code retrieves GitHub pull request summaries within a date range. <br>
 
-## Prerequisites
+### Prerequisites
 
 - Python 3.9
 - Required Python packages:
@@ -14,7 +14,7 @@ Description: This Python code retrieves GitHub pull request summaries within a d
     - `PyGithub`
     - `tabulate`
 
-## Installation
+### Installation
 
 1. Clone the repository:
 
@@ -38,7 +38,7 @@ Description: This Python code retrieves GitHub pull request summaries within a d
 
     Replace your-github-api-key with your personal GitHub API key.
 
-## Usage
+### Usage
 
 1. Run the Python program:
 
